@@ -14,4 +14,6 @@
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=uniqueiam&show_icons=true&locale=en&layout=compact" alt="uniqueiam" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=uniqueiam&" alt="uniqueiam" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=uniqueiam&theme=radical&hide_border=false&t=2" alt="uniqueiam" /></p>
+
+
