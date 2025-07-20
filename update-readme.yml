@@ -1,0 +1,18 @@
+name: ♻️ Refresh GitHub Profile Stats Daily
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # Every day at midnight UTC
+  workflow_dispatch:       # Allow manual trigger
+
+jobs:
+  refresh-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧾 Pull your latest README
+        uses: actions/checkout@v3
+
+      - name: 🛠 Trigger README stats refresh
+        run: |
+          curl -s -X GET "https://github-readme-stats.vercel.app/api?username=uniqueiam&cache_seconds=1800"
+          curl -s -X GET "https://github-readme-streak-stats.herokuapp.com/?user=uniqueiam"
